@@ -1,0 +1,48 @@
+#resume
+{
+	font-family: Arial, Helevetica, sans-serif; 
+}
+#about
+{
+	//font-family: Arial, sans-serif; 
+	font-size: 18px; 
+	font-weight: 450;
+}
+
+#resume h1
+{
+	font-size: 26px;
+	line-height: 0; 
+}
+
+#resume h2
+{
+	font-size: 22px; 
+	display: inline; 
+}
+#resume h3
+{
+	font-size: 19px; 
+	display: inline; 
+}
+#resume p
+{
+	font-size: 16px; 
+	display: inline;
+	line-height:auto; 
+	
+	
+}
+
+.solid
+{
+	color:black;
+}
+.faded
+{
+	color: rgb(50,50,50); 
+}
+.bleached
+{
+	color: rgb(100,100,100); 
+}
