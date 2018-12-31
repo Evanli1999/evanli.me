@@ -1,396 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Evan Li</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Evan Li</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <!--[if lte IE 8]>
-      <script src="css/ie/html5shiv.js"></script>
-    <![endif]-->
 	
-	<script src="js/jquery.min.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+	<link 
+		rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		crossorigin="anonymous">
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link
+		rel="stylesheet"
+		href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+		integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+		crossorigin="anonymous">
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/overlay.css">
 	<link rel="stylesheet" href="css/style-new-normal.css">
 	<link rel="stylesheet" href="css/resume.css">
 	<link rel="stylesheet" href="css/style-new-typewriter.css">
-	
-		
-	
-	<script>
-	$(document).ready(function () 
-	{
-		$(document).on("scroll", onScroll);
- 
-		$('a[href^="#"]').on('click', function (e) {
-			e.preventDefault();
-			$(document).off("scroll");
- 
-			$('a').each(function () {
-				$(this).removeClass('active');
-			})
-			$(this).addClass('active');
- 
-			var target = this.hash;
-			$target = $(target);
-			$('html, body').stop().animate({
-				'scrollTop': $target.offset().top+2
-			}, 500, 'swing', function () {
-				window.location.hash = target;
-				$(document).on("scroll", onScroll);
-			});
-		});
-	});
- 
-	function onScroll(event){
-		var scrollPosition = $(document).scrollTop();
-		$('nav a').each(function () {
-			var currentLink = $(this);
-			var refElement = $(currentLink.attr("href"));
-			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-				$('nav ul li a').removeClass("active");
-				currentLink.addClass("active");
-			}
-			else{
-				currentLink.removeClass("active");
-			}
-		});
-	}
-	</script>
-	
-	<script>
-		function overlay(title, content, img, link, source) 
-		{
-			document.getElementById('overlay').innerHTML = 
-			"<div id='inner'> <a><i style=\"float: right\"onclick='deleteOverlay()' class=\"far fa-window-close\"></i></a> <div class = \"row\"> <div style = \"text-align:center\" class = \"col-lg-7\"> <h2>"
-			 + title + "</h2> <p>" + content + "</p> <a href=\"" + link + "\">" + source + "<\a> </div> <div class=\"col-lg-5\"> <br><div class = \"image fit\"> <img src=\"" + img + "\">" + "<br></div></div></div></div>";
-			 document.getElementById("overlay").style.display = "block";
-		}
-		
-		function deleteOverlay()
-		{
-		
-			document.getElementById("overlay").style.display = "none";
-		}
 
-	</script>
-  </head>
-  
-  <body>
-	<ul style="position:fixed; left:0; width:100%;">
-		<li><a href="#aboutme">About</a></li>
-		<li><a href="#projects">Projects</a></li>
-		<li><a href="#photography">Photography</a></li>
+	<script src="js/scroll.js"></script>
+	<script src="js/panelSwitch.js"></script>
+</head>
+
+<body>
+	<ul id = "top" style="position:fixed; left:0; width:100%;">
+		<li><a href="#top" onclick="onNavbarClick('about')">About</a></li>
+		<li><a href="#top" onclick="onNavbarClick('projects')">Projects</a></li>
+		<li><a href="#top" onclick="onNavbarClick('photography')">Photography</a></li>
 		<li><a href="http://evanli.me/Assets/Resume.pdf">Resumé</a></li>
-		<li><a href="#contact">Contact</a></li>
+		<li><a href="#top" onclick="onNavbarClick('contact')">Contact</a></li>
 	</ul>
+    <div style="height:100px;"> </div>
+
+     <div class="container">
+        <div id = "fade" style="text-align:center;">
+            <div class="typewriter">
+              <h1 style="color:rgb(50,50,50); border-color:black border-width:1px;"> Hi, My name is Evan Li. </h1>
+            </div>
+        
+            <div>
+                <h4 style="display:inline">
+                    UW - CS - '22
+                </h4>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+	<div id="mainContentPanel" class="container">
+
+	</div>
 	
-	<div style="height:100px;"> </div>
 	
-		 <div class="container">
-			<div id = "fade" style="text-align:center;">
-				<div class="typewriter">
-				  <h1 style="color:rgb(50,50,50); border-color:black border-width:1px;"> Hi, My name is Evan Li. </h1>
-				</div>
-			
-			
-				<div>
-					<h4 style="display:inline">
-						UW - CS - '22
-					</h4>
-					<hr id="aboutme" >
-					
-				
-				</div>
-			</div>
-		
-			<div>
-				<div class="container">
-					<div style="text-align:center">
-						<h2><strong>About Me</strong></h2>
-							<a href="http://evanli.me/Assets/Resume.pdf"> <i class="far fa-file-pdf fa-2x"></i></a>
-							<br>
-							<br>
-						<p id="about" style="text-align:left; line-height:25px">I am a computer science student at the University of Waterloo. In particular, I have developed a good amount of experience with machine learning 
-						and web development I have had many opportunities to explore machine learning 
-						and technology such as NLP by analyzing datasets such as those on <a href="http://kaggle.com/evanli1999">Kaggle</a>. Notably, here is an analysis I did on the 
-						<a href="https://www.kaggle.com/evanli1999/titanic-a-demo-of-pandas-and-scikit-learn">Titanic Dataset</a>, 
-						where I achieve an 88% accuracy predicting which passengers survived the accident. 
-						<br><br>
-						I am a very independent and fast worker. The course of my many projects have required me to learn and apply a diverse set of skills without supervision or deadlines. 
-						I have consistently achieved this time after time, as demonstrated by my projects and experience. 
-						
-						</p>
-						<br>
-					</div>
-				</div>
-			</div>
-			<div>
-			
-				<!--Education-->
-			
-				<div id = "resume" class="row"> 
-					<div class="col-sm-3">
-						<h1 id="resume" class="solid">Education</h1>
-					</div>
-					<div class="col-sm-9">
-						<h2 id="resume" class="faded">University of Waterloo</h2>
-						<br>
-						<p>Bachelor's of Computer Science, Honors, co-op, 2022, Waterloo, ON</p>
-						<br>
-						<br>
-					</div>
-				</div>
-				
-				<!--Skills-->
-				
-				<div id = "resume" class="row"> 
-					<div class="col-sm-3">
-						<h1 id="resume" class="solid">Skills/Tools</h1>
-					</div>
-					<div class="col-sm-9">
-						<h2 id="resume" class="solid">Languages</h2>
-						<br>
-						<p id="resume" class="faded">Java, C, C++, Python, MATLAB, HTML, CSS, JS(JQuery/React)</p>
-						<br>
-						<h2 id="resume" class="solid">Tools<h2>
-						<br>
-						<p id="resume" class="faded">Pandas, Sci-kit Learn, NLTK, TensorFlow, Git, AWS (EC2/S3), Keras, Flask</p>
-					</div>
-				</div>
-				
-				<br>
-				<hr id="projects">
-				
-			
-				
-			</div>
-		
-		
-			<div class="container">
-				<div style="text-align:center">
-					<h2><strong>Projects</strong></h2>
-					
-					<p>
-						<a href="https://github.com/Evanli1999">
-						<i class = "fa fa-github fa-2x"></i>
-						</a>
-					</p>
-				</div>
-			</div>
-			
-			
-			<div class="row hidden-xs hidden-sm">
-				<div class="col-md-3">
-					<div id="card" class="thumbnail" style="text-align:center" 
-					
-					onclick="overlay(
-										'Data Analysis', 
-										'I have a great interest in applying machine learning models to statistical analysis and modeling.', 
-										'Gal\\Projects\\data.PNG',
-										'https://www.kaggle.com/evanli1999',
-										'Kaggle')">
-
-					  
-						<img src="Gal\Projects\data.PNG" alt="Lights" style="width:100%">
-						<div class="caption" style="text-align: center">
-						  Data Analysis
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-3">
-					<div id="card" class="thumbnail" style="text-align:center" 
-					onclick="overlay(
-										'RayCasting Engine', 
-										'A naive implementation of the DDA algorithm coded purely in Java. Implements a varying FOV and 64 bit texture rendering.', 
-										'Gal\\Projects\\Raycaster.PNG',
-										'https://github.com/Evanli1999/RayCaster',
-										'<i class=\'fa fa-github fa-2x\'></i>')">
-
-					  
-						<img src="Gal\Projects\Raycaster.PNG" style="width:100%">
-						<div class="caption" style="text-align: center">
-						  RayCaster Engine
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-3">
-					<div id="card" class="thumbnail" style="text-align:center" 
-					onclick="overlay(
-										'Photoresistor Camera', 
-										'Using a single photoresistor, two stepper motors and a converging lense, this device can take a 300x300px black and white image.', 
-										'Gal\\Projects\\camera.jpg',
-										'https://github.com/Evanli1999/RayCaster',
-										'Design and Blueprints')">
-						<img src="Gal\Projects\camera.jpg" alt="Lights" style="width:100%">
-						<div class="caption" style="text-align: center">
-						  Photoresistor Camera
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div id="card" class="thumbnail" style="text-align:center" 
-					onclick="overlay(
-										'Chess AI', 
-										'Coded in Java. MiniMax tree search to maximize AI material value. Upon implementing alpha-beta pruning, tree search times reduced by 65%', 
-										'Gal\\Projects\\Raycaster.PNG',
-										'https://github.com/Evanli1999/Chess-MiniMax',
-										'<i class=\'fa fa-github fa-2x\'></i>')">
-						<img src="Gal\Projects\chess.PNG" alt="Lights" style="width:100%">
-						<div class="caption" style="text-align: center">
-						  Chess AI
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			
-			
-			<div id='overlay'> </div>
-			<!-- --------------------------------------------------------SECOND ROW--------------------------------------------------------- --> 
-			<!-- --------------------------------------------------------SECOND ROW--------------------------------------------------------- --> 
-			<!-- --------------------------------------------------------SECOND ROW--------------------------------------------------------- --> 
-			<!-- --------------------------------------------------------SECOND ROW--------------------------------------------------------- --> 
-			<!-- --------------------------------------------------------SECOND ROW--------------------------------------------------------- --> 
-			
-			<div class="row">
-				<div class="col-md-3">
-					<div id="card" class="thumbnail" style="text-align:center" 
-					onclick="overlay(
-										'Last Stand Defense', 
-										'Coded purely in Java. Mouse driven GUI created from scratch.',
-										'Gal\\Projects\\LSD.PNG',
-										'https://github.com/Evanli1999/LastStandDefence', 
-										'<i class=\'fa fa-github fa-2x\'></i>')">
-
-					  
-						<img src="Gal\Projects\LSD.PNG" alt="Lights" style="width:100%">
-						<div class="caption" style="text-align: center">
-						  Tower Defense
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-3">
-					<div id="card" class="thumbnail" style="text-align:center" 
-					onclick="overlay(
-										'RummiKube (Card Game)', 
-										'Coded in Java in a group of 3.  Mouse driven GUI made from scratch using JFrame and custom elements.', 
-										'Gal\\Projects\\Rum-me-cube.PNG',
-										'https://github.com/Evanli1999/Rummikub',
-										'<i class=\'fa fa-github fa-2x\'></i>')">
-
-					  
-						<img src="Gal\Projects\Rum-me-cube.PNG" alt="Lights" style="width:100%">
-						<div class="caption" style="text-align: center">
-						  RummiKube
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-3">
-					<div id="card" class="thumbnail" style="text-align:center" 
-					onclick="overlay(
-										'Collision Simulation', 
-										'Made in C++, this application simulates the collision between two perfectly elastic spheres, outputting a position-time CSV. Later iterations also account for skewed impacts as well as rotation.', 
-										'Gal\\Projects\\Collisionsim.gif',
-										'https://github.com/Evanli1999/CollisionSim',
-										'<i class=\'fa fa-github fa-2x\'></i>')">
-						<img src="Gal\Projects\Collisionsim.gif" alt="Lights" style="width:100%">
-						<div class="caption" style="text-align: center">
-						  Collision Simulation
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div id="card" class="thumbnail" style="text-align:center" 
-					onclick="overlay(
-										'React Go', 
-										'A game of Go, logic and DOM rendering done purely in JavaScript using React.', 
-										'Gal\\Projects\\go.PNG',
-										'http://evanli.me/go.html',
-										'Live Demo')">
-						<img src="Gal\Projects\go.PNG" alt="Lights" style="width:100%">
-						<div class="caption" style="text-align: center">
-						  React Go
-						</div>
-					</div>
-				</div>
-			</div>
-			<br>
-			<hr id="photography">
-			
-			<div>
-				<div class="container">
-					<div style="text-align:center">
-						<h2><strong>Photography</strong></h2>
-						
-						
-							<a href="https://www.instagram.com/evantheli123/"> <i class="fa fa-instagram fa-2x"></i></a> &nbsp &nbsp
-							<a href="https://github.com/Evanli1999"> <i class="fa fa-flickr fa-2x"></i></a>
-							<br>
-							<br>
-						
-					</div>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-sm-4">
-					<img style="width:100%" src="Gal\Thumbnail\1.jpg">
-					<hr>
-					<img style="width:100%" src="Gal\Thumbnail\16.jpg">
-					<hr>
-					<img style="width:100%" src="Gal\Thumbnail\10.jpg">
-					<hr>
-					<img style="width:100%" src="Gal\Thumbnail\14.jpg">
-				</div>
-				<div class="col-sm-4">
-					<img style="width:100%" src="Gal\Thumbnail\2.jpg">
-					<hr>
-					<img style="width:100%" src="Gal\Thumbnail\4.jpg">
-					<hr>
-					<img style="width:100%" src="Gal\Thumbnail\7.jpg">
-					<hr>
-					<img style="width:100%" src="Gal\Thumbnail\6.jpg">
-					<hr>
-					<img style="width:100%" src="Gal\Thumbnail\11.jpg">
-				</div>
-				<div class="col-sm-4">
-					<img style="width:100%" src="Gal\Thumbnail\3.jpg">
-					<hr>
-					<img style="width:100%" src="Gal\Thumbnail\5.jpg">
-					<hr>
-					<img style="width:100%" src="Gal\Thumbnail\8.jpg">
-					<hr>
-					<img style="width:100%" src="Gal\Thumbnail\13.jpg">
-				</div>
-			</div>
-			<br id="contact">
-			<hr>
-			<div>
-				<div class="container">
-					<div style="text-align:center">
-						<h2><strong>Contact</strong></h2>
-						
-						
-							<i class="fa fa-envelope"></i> : hc3li@edu.uwaterloo.ca
-							<br>
-							<a style="text-decoration: none" href="https://github.com/Evanli1999"> <i class="fa fa-github"></i> : @evanli1999</a>
-							<br>
-							<br>
-						
-					</div>
-				</div>
-			</div>
 </body>
