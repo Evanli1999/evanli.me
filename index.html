@@ -34,11 +34,11 @@
 
 <body>
 	<ul class = "navbar" id = "top" style="position:fixed; left:0; width:100%;">
-		<li><a href="#top" onclick="onNavbarClick('about')">About</a></li>
-		<li><a href="#top" onclick="onNavbarClick('projects')">Projects</a></li>
-		<li><a href="#top" onclick="onNavbarClick('photography')">Photography</a></li>
-		<li><a href="http://evanli.me/Assets/Resume.pdf">Resumé</a></li>
-		<li><a href="#top" onclick="onNavbarClick('contact')">Contact</a></li>
+		<li class="navbar-elem"><a href="#top" onclick="onNavbarClick('about')">About</a></li>
+		<li class="navbar-elem"><a href="#top" onclick="onNavbarClick('projects')">Projects</a></li>
+		<li class="navbar-elem"><a href="#top" onclick="onNavbarClick('photography')">Photography</a></li>
+		<li class="navbar-elem"><a href="http://evanli.me/Assets/Resume.pdf">Resumé</a></li>
+		<li class="navbar-elem"><a href="#top" onclick="onNavbarClick('contact')">Contact</a></li>
 	</ul>
 	<div style="height:100px;"> </div>
 
@@ -55,11 +55,10 @@
 			</div>
 		</div>
 	</div>
-	<hr>
 	<div id="mmainContentPanel" class="container">
+		<hr>
 		<div style="text-align:center">
 			<h3 style="text-align: center">About Me</h3>
-			<br>
 			<div class="row">
 				<div class="col-md-3 rounded-crop hidden-sm hidden-xs">
 					<img class="img-responsive" style="overflow: hidden; position: relative" src="Index_Photography/Portrait.jpg"/>
@@ -79,12 +78,16 @@
 			<br>
 				<div>
 				<p id="about" style="text-align:left; line-height:25px"><strong>Software Development Intern </strong> - IBM Canada Varicent (May 2018 - Aug 2018)
-					<br>
-					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Implemented API Keys to REST API and Web Application<br>
+					<ul class="default">
+						<li style="font-size:"class="default">abcd</li>
+						<li class="default">abcd</li>
+					</ul>
+					abcd
+					<!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Implemented API Keys to REST API and Web Application<br>
 					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Developed federated access controls to automatically configure ICM users' account settings based on organization login role and privileges<br>
 					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Implemented functionality to schedule automatic backups as well as a dashboard to display their status<br>
 					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Designed and implemented model access controls (IP Whitelisting, SSH requirement ... etc)<br>
-					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Upgraded SAML protocol to enforce audience and lifespan assertions<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Upgraded SAML protocol to enforce audience and lifespan assertions<br>!--> 
 				</p>
 
 				<p id="about" style="text-align:left; line-height:25px"><strong>Behavioural Team Core Member </strong> - WATOnomous (Sept 2018 - Nov 2018)

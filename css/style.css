@@ -8,11 +8,12 @@
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
-		line-height: 1.75em;
+		text-align: left;
 	}
 
 	h1,h2,h3,h4,h5,h6
 	{
+		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		color: #666;
 		line-height: 1.5em;
@@ -32,7 +33,7 @@
 	}
 	a:hover
 	{
-		color: #FF98B7;
+		color: #2A66D7;
 		border-bottom-color: rgb(150,57,96);
 		text-decoration:underline; 
 	}
@@ -45,12 +46,6 @@
 	ul a:link
 	{
 		text-decoration:none;
-	}
-	
-	a:hover
-	{
-		color: #FF98B7
-		text-decoration: none; 
 	}
 	
 	a:visited
@@ -142,6 +137,20 @@
 	}
 
 /*List Properties (mostly for navbar)*/
+	ul.default
+	{
+		list-style: disc;
+	}
+
+	li.default {
+		display: list-item;
+		text-align: left;
+		font-size: 19px;
+		line-height: 25px;
+		font-family: 'Oxygen', sans-serif;
+	}
+
+
 	ul.navbar
 	{
 		z-index:1; 
@@ -153,30 +162,20 @@
 		text-align:center;	
 	}
 
-	ul.default
-	{
-		list-style: disc;
-	}
-
-	li
+	li.navbar-elem
 	{
 		display: inline-block;
 		text-align:center;
-	}
-
-	li.default {
-		display: list-item;
-		text-align: left;
-	}
-
-	li a 
-	{
-		display: inline-block; 
 		color: white;
 		padding: 5px 10px;
 		text-decoration: none;
 		margin:auto;
-		border:none;		
+		border:none;
+		background-color: "#555";
+	}
+
+	li.navbar-elem: hover {
+		background-color: green;
 	}
 
 	li a:visited
@@ -191,8 +190,7 @@
 	}
 	li a:hover 
 	{
-		background-color: #111;
-		color: #FF98B7;
+		color: #2A66D7;
 		text-decoration: none; 
 		margin:auto;
 	}
