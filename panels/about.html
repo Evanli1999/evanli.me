@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang = "en">
 
+<hr>
 <div style="text-align:center">
-    <h2><strong>About Me</strong></h2>
+    <h3 style="text-align: center">About Me</h3>
+    <div class="row">
+        <div class="col-md-3 rounded-crop hidden-sm hidden-xs">
+            <img class="img-responsive" style="overflow: hidden; position: relative" src="Index_Photography/Portrait.jpg"/>
+        </div>
+        <div class="col-md-9">
+            <p id="text">
+                Hi! I'm currently in my second year of a Computer Science and Statistics double major at the University of Waterloo.
+                Currently looking for internship opportunites for summer 2019 for a math/theory heavy software development position!
+                <br>
+                <br>
+                I have industry experience in cloud integration and backend engineering, as well as a passion for C++ and Java. I've recently been exploring applied statistics and machine learning by building AIs for an assortment of games such as Chess and Tetris as well as doing an assortment of kernels and competitions on Kaggle! 
+                <br><br>
+                In my spare time I like to play contemporary jazz piano (<a href="https://www.youtube.com/watch?v=116QHk9jNGI">think: Kapustin!</a>), badminton, competitive video games, and of course code.
+            </p>
+        </div>
+    </div>
     <br>
-    <br>
-    <p id="about">
-        Hi! I'm currently in my second year of a Computer Science and Statistics double major at the University of Waterloo.
+    <hr>
+    <h3 style="text-align: center">Experience</h3>
+    <div>
+        <p id="text"><strong>Software Development Intern </strong> - IBM Canada Varicent (May 2018 - Aug 2018)
+            <ul id="text">
+                <li>Implemented API Key generation and access to the Varicent REST API and web app</li>
+                <li>Developed federated access controls to automatically configure ICM users' account settings based on organization login role and privileges</li>
+                <li>Implemented functionality to schedule automatic backups as well as a dashboard to display backup status</li>
+                <li>Designed and implemented model access controls (IP Whitelisting, SSH requirement ... etc)</li>
+                <li>Upgraded SAML protocol to enforce audience and lifespan assertions</li>
+            </ul>
+        </p>
         <br>
-        I have industry experience in cloud integration and backend engineering, as well as a passion for good C++ and Java code. I've recently been exploring applied statistics and machine learning by building AIs for an assortment of games such as Chess and Tetris as well as doing an assortment of kernels and competitions on Kaggle!            
+        <p id="text"><strong>Behavioural Team Core Member </strong> - WATOnomous (Sept 2018 - Nov 2018)
+            <ul id="text">
+                <li>Designed and implemented localized obstacle map to avoid object collisions and distinguish between static and dynamic obstacles</li>
+                <li>Designed waypoint processor to plan a (high level) route for the vehicle to follow in order to reach all the given waypoints</li>
+            </ul>
+            
+        </p>
+    </div>
+    <br>
+    <hr>
+    <h3 style="text-align: center">Skills</h3>
+    <p id="text">
+        <strong>Languages</strong> (in order of proficiency):
+        <ul id="text">
+            <li>C++, C, Java, JavaScript(JQuery / React), Python, (T-)SQL, Scala, MATLAB, C#, CUDA</li>
+        </ul>
+    </p>
+    <p id="text">
+        <strong>Tools</strong> (in no particular order):
+        <ul id="text">
+            <li>RDBMS (MS SQL Server, Postgres), NoSQL(Redis, Bigtable), Git, Bash, Pandas, TensorFlow, Seaborn</li>
+        </ul>
     </p>
     <br>
-    <div id = "resume" class="row"> 
-        <div class="col-sm-3">
-            <h1 id="resume" class="solid">Education</h1>
-        </div>
-        <div class="col-sm-9">
-            <h2 id="resume" class="faded">University of Waterloo</h2>
-            <br>
-            <p>Bachelor's of Computer Science, Honors, co-op, 2022, Waterloo, ON</p>
-            <br>
-            <br>
-        </div>
-    </div>
-
-    <div id = "resume" class="row"> 
-        <div class="col-sm-3">
-            <h1 id="resume" class="solid">Skills/Tools</h1>
-        </div>
-        <div class="col-sm-9">
-            <h2 id="resume" class="solid">Languages</h2>
-            <br>
-            <p id="resume" class="faded">Java, C, C++, Python, MATLAB, HTML, CSS, JS(JQuery/React)</p>
-            <br>
-            <h2 id="resume" class="solid">Tools<h2>
-                <br>
-                <p id="resume" class="faded">Pandas, Sci-kit Learn, NLTK, TensorFlow, Git, AWS (EC2/S3), Keras, Flask</p>
-            </div>
-        </div>
-    </div>
+    <p id="text">
+        Here are some technologies that I would love to work with, and would be glad to further familiarize:
+        <ul id="text" >
+            <li>CUDA, Haskell, R, Rust, GoLang, J</li>
+        </ul>
+    </p>
+</div>
