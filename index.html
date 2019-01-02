@@ -6,21 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<script
-		src="https://code.jquery.com/jquery-3.3.1.min.js"
-		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		crossorigin="anonymous"></script>
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
 	<link 
-		rel="stylesheet"
-		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-		crossorigin="anonymous">
+	rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
 	<script
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link
-		rel="stylesheet"
-		href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
-		integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
-		crossorigin="anonymous">
+	rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+	integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+	crossorigin="anonymous">
 	
 	
 	<link rel="stylesheet" href="css/style.css">
@@ -33,28 +33,69 @@
 </head>
 
 <body>
-	<ul id = "top" style="position:fixed; left:0; width:100%;">
+	<ul class = "navbar" id = "top" style="position:fixed; left:0; width:100%;">
 		<li><a href="#top" onclick="onNavbarClick('about')">About</a></li>
 		<li><a href="#top" onclick="onNavbarClick('projects')">Projects</a></li>
 		<li><a href="#top" onclick="onNavbarClick('photography')">Photography</a></li>
 		<li><a href="http://evanli.me/Assets/Resume.pdf">Resumé</a></li>
 		<li><a href="#top" onclick="onNavbarClick('contact')">Contact</a></li>
 	</ul>
-    <div style="height:100px;"> </div>
+	<div style="height:100px;"> </div>
 
-     <div class="container">
-        <div id = "fade" style="text-align:center;">
-            <div class="typewriter">
-              <h1 style="color:rgb(50,50,50); border-color:black border-width:1px;"> Hi, My name is Evan Li. </h1>
-            </div>
-        
-            <div>
-                <h4 style="display:inline">
-                    UW - CS - '22
-                </h4>
-                <hr>
-            </div>
-        </div>
-    </div>
-	<div id="mainContentPanel" class="container"></div>	
+	<div class="container">
+		<div id = "fade" style="text-align:center;">
+			<div class="typewriter">
+				<h1 style="color:rgb(50,50,50); border-color:black border-width:1px;"> Hi, My name is Evan Li. </h1>
+			</div>
+
+			<div>
+				<h4 style="display:inline">
+					UW - CS - '22
+				</h4>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div id="mmainContentPanel" class="container">
+		<div style="text-align:center">
+			<h3 style="text-align: center">About Me</h3>
+			<br>
+			<div class="row">
+				<div class="col-md-3 rounded-crop hidden-sm hidden-xs">
+					<img class="img-responsive" style="overflow: hidden; position: relative" src="Index_Photography/Portrait.jpg"/>
+				</div>
+				<div class="col-md-9">
+					<p id="about" style="text-align:left; line-height:25px">
+						Hi! I'm currently in my second year of a Computer Science and Statistics double major at the University of Waterloo.
+						<br><br>
+						I have industry experience in cloud integration and backend engineering, as well as a passion for C++ and Java. I've recently been exploring applied statistics and machine learning by building AIs for an assortment of games such as Chess and Tetris as well as doing an assortment of kernels and competitions on Kaggle! 
+						<br><br>
+						In my spare time I like to play contemporary jazz piano (<a href="https://www.youtube.com/watch?v=116QHk9jNGI">think: Kapustin!</a>), badminton, competitive video games, and of course code.
+					</p>
+				</div>
+			</div>
+			<hr>
+			<h3 style="text-align: center">Experience</h3>
+			<br>
+				<div>
+				<p id="about" style="text-align:left; line-height:25px"><strong>Software Development Intern </strong> - IBM Canada Varicent (May 2018 - Aug 2018)
+					<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Implemented API Keys to REST API and Web Application<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Developed federated access controls to automatically configure ICM users' account settings based on organization login role and privileges<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Implemented functionality to schedule automatic backups as well as a dashboard to display their status<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Designed and implemented model access controls (IP Whitelisting, SSH requirement ... etc)<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Upgraded SAML protocol to enforce audience and lifespan assertions<br>
+				</p>
+
+				<p id="about" style="text-align:left; line-height:25px"><strong>Behavioural Team Core Member </strong> - WATOnomous (Sept 2018 - Nov 2018)
+					<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Designed and implemented localized obstacle map to avoid object collisions and distinguish between static and dynamic obstacles<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Designed waypoint processor to plan a (high level) route for the vehicle to follow in order to reach all the given waypoints<br>
+				</p>
+			</div>
+			<hr>
+			<h3 style="text-align: center">Skills</h3>
+
+		</div>
+	</div>	
 </body>

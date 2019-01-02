@@ -87,12 +87,6 @@
 		letter-spacing: -1px; 
 	}
 
-	strong, b
-	{
-		font-weight: 300;
-		color: #666;
-	}
-	
 	em, i
 	{
 		font-style: italic;
@@ -140,8 +134,15 @@
 		width:100%;
 	}
 
+	.rounded-crop
+	{
+		position: relative;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+
 /*List Properties (mostly for navbar)*/
-	ul 
+	ul.navbar
 	{
 		z-index:1; 
 		list-style-type: none;
@@ -155,18 +156,17 @@
 	ul.default
 	{
 		list-style: disc;
-		padding-left: 0.85em;
 	}
 
-	ul.default li
-	{
-		padding:0.35em;
-	}
-
-	li 
+	li
 	{
 		display: inline-block;
 		text-align:center;
+	}
+
+	li.default {
+		display: list-item;
+		text-align: left;
 	}
 
 	li a 
