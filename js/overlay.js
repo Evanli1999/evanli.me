@@ -8,6 +8,5 @@ function overlay(title, content, img, link, source)
 
 function deleteOverlay()
 {
-
 	document.getElementById("overlay").style.display = "none";
 }
