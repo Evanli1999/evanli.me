@@ -8,10 +8,12 @@ function overlay(title, content, img, link, source)
 
 function overlayProject(file) {
     console.log("trying to get " + file + ".json");
-    $.getJSON("https://evanli1999.github.io/evanli.me/panels/projects/" + "default" + ".json", (json) => {
+    $.getJSON("https://evanli1999.github.io/evanli.me/panels/projects/" + "default" + ".json", function(json) {
         console.log("in callback");
         console.log(json);
+        alert("in callback");
     });
+    console.log("complete");
 }
 
 function deleteOverlay()
