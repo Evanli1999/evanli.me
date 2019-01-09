@@ -10,8 +10,12 @@ function overlayProject(file) {
     console.log("trying to get " + file + ".json");
     $.getJSON("https://evanli1999.github.io/evanli.me/panels/projects/" + "default" + ".json", function(json) {
         console.log("in callback");
-        console.log(json);
-        alert("in callback");
+        console.log(json); 
+
+        document.getElementById('overlay').innerHTML = 
+        "<div id='inner'> <a><i style=\"float: right\"onclick='deleteOverlay()' class=\"far fa-window-close\"></i></a> <div class = \"row\"> <div style = \"text-align:center\" class = \"col-lg-7\"> <h2>"
+         + json.title + "</h2> <p>" + json.description + "</p> </div> <div class=\"col-lg-5\"> </div></div></div>";
+         document.getElementById("overlay").style.display = "block";
     });
     console.log("complete");
 }
