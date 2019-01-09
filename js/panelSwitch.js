@@ -1,7 +1,6 @@
 var active = "about";
 
 function onNavbarClick(option) {
-    console.log(active + " switching to " + option);
     switch (option) {
         case "about":
         case "projects":
@@ -16,6 +15,5 @@ function onNavbarClick(option) {
 }
 
 $(function() {
-    console.log("function");
     $("#mainContentPanel").load("https://evanli1999.github.io/evanli.me/panels/" + active + ".html");
 })

@@ -6,6 +6,14 @@ function overlay(title, content, img, link, source)
 	 document.getElementById("overlay").style.display = "block";
 }
 
+function overlayProject(file) {
+    console.log("trying to get " + file + ".json");
+    $.getJSON("https://evanli1999.github.io/evanli.me/panels/projects/" + "default" + ".json", (json) => {
+        console.log("in callback");
+        console.log(json);
+    });
+}
+
 function deleteOverlay()
 {
 	document.getElementById("overlay").style.display = "none";
