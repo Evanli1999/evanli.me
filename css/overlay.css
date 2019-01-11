@@ -27,6 +27,11 @@
 	border-radius: 25px; 
 }
 
+#card {
+	text-align: center;
+	display: inline-block;
+}
+
 #card:hover
 {
 	background:rgb(200,200,200); 

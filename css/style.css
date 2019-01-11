@@ -81,6 +81,15 @@
 		clear: both;
 	}
 
+	p
+	{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 18px; 
+		font-weight: 450;
+		text-align: left;
+		line-height: 25px;
+	}
+
 /*Hyperlink Properties*/
 	a
 	{

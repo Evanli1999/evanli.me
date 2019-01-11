@@ -2,14 +2,77 @@
 <html lang = "en">
 
 <hr>
-<div style="text-align:center">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Evan Li</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <link 
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+    crossorigin="anonymous">
+    
+    
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/style-new-typewriter.css">
+
+
+    <script src="js/scroll.js"></script>
+    <script src="js/panelSwitch.js"></script>
+    <script src="js/overlay.js"></script>
+</head>
+
+<body>
+    <ul class = "navbar" id = "top" style="position:fixed; left:0; width:100%;">
+        <li class="navbar-elem"><a href="#top" onclick="onNavbarClick('about')">About</a></li>
+        <li class="navbar-elem"><a href="#top" onclick="onNavbarClick('projects')">Projects</a></li>
+        <li class="navbar-elem"><a href="#top" onclick="onNavbarClick('photography')">Photography</a></li>
+        <li class="navbar-elem"><a href="http://evanli.me/Assets/Resume.pdf">Resumé</a></li>
+        <li class="navbar-elem"><a href="#top" onclick="onNavbarClick('contact')">Contact</a></li>
+    </ul>
+    <div style="height:100px;"> </div>
+
+    <div class="container">
+        <div id = "fade" style="text-align:center;">
+            <div class="typewriter">
+                <h1 style="color:rgb(50,50,50); border-color:black border-width:1px;"> Hi, My name is Evan Li. </h1>
+            </div>
+
+            <div>
+                <h4 style="display:inline">
+                    UW - CS - '22
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div id='overlay'> </div>
+    <div id="mmmainContentPanel" class="container">
+        <div style="text-align:center">
     <h3 style="text-align: center">About Me</h3>
     <div class="row">
         <div class="col-md-3 rounded-crop hidden-sm hidden-xs">
             <img class="img-responsive" style="overflow: hidden; position: relative" src="Index_Photography/Portrait.jpg"/>
         </div>
         <div class="col-md-9">
-            <p id="text">
+            <p>
                 Hi! I'm currently in my second year of a Computer Science and Statistics double major at the University of Waterloo.
                 Currently looking for internship opportunites for summer 2019 for a math/theory heavy software development position!
                 <br>
@@ -24,7 +87,7 @@
     <hr>
     <h3 style="text-align: center">Experience</h3>
     <div>
-        <p id="text"><strong>Software Development Intern </strong> - IBM Canada Varicent (May 2018 - Aug 2018)
+        <p><strong>Software Development Intern </strong> - IBM Canada Varicent (May 2018 - Aug 2018)
             <ul id="text">
                 <li>Implemented API Key generation and access to the Varicent REST API and web app</li>
                 <li>Developed federated access controls to automatically configure ICM users' account settings based on organization login role and privileges</li>
@@ -34,7 +97,7 @@
             </ul>
         </p>
         <br>
-        <p id="text"><strong>Behavioural Team Core Member </strong> - WATOnomous (Sept 2018 - Nov 2018)
+        <p><strong>Behavioural Team Core Member </strong> - WATOnomous (Sept 2018 - Nov 2018)
             <ul id="text">
                 <li>Designed and implemented localized obstacle map to avoid object collisions and distinguish between static and dynamic obstacles</li>
                 <li>Designed waypoint processor to plan a (high level) route for the vehicle to follow in order to reach all the given waypoints</li>
@@ -45,23 +108,25 @@
     <br>
     <hr>
     <h3 style="text-align: center">Skills</h3>
-    <p id="text">
+    <p >
         <strong>Languages</strong> (in order of proficiency):
         <ul id="text">
             <li>C++, C, Java, JavaScript(JQuery, React), Python, (T-)SQL, Scala, MATLAB, C#, CUDA</li>
         </ul>
     </p>
-    <p id="text">
+    <p >
         <strong>Tools</strong> (in no particular order):
         <ul id="text">
             <li>RDBMS (MS SQL Server, Postgres), NoSQL(Redis, Bigtable), Git, Bash, Pandas, TensorFlow, Seaborn</li>
         </ul>
     </p>
     <br>
-    <p id="text">
+    <p >
         Here are some technologies that I would love to work with, and would be glad to further familiarize:
-        <ul id="text" >
+        <ul  id="text">
             <li>CUDA, Haskell, R, Rust, GoLang, J</li>
         </ul>
     </p>
 </div>
+    </div>    
+</body>

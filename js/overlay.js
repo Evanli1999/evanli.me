@@ -6,7 +6,7 @@ function overlay(title, content, img, link, source)
 	 document.getElementById("overlay").style.display = "block";
 }
 
-function overlayProject(file) {
+function overlayProject(file = "default") {
     console.log("trying to get " + file + ".json");
     $.getJSON("https://evanli1999.github.io/evanli.me/panels/projects/" + "default" + ".json", function(json) {
         console.log("in callback");
