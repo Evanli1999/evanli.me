@@ -3,5 +3,5 @@
     "noun": "Terminal Text Editor",
     "languages": "c++",
     "description": "Vim clone - C++ program using NCurses to simulate the key features of vim in a terminal-based text editor, done in a group of 2 for the CS246e final project. At a high level, a MVC pattern was used with the model itself being a state machine - based on keyboard commands, the model would enter different states (e.g. insert mode, search mode, macro recording mode ... etc) where seperately implemented \"state\" classes dictated how to handle input using a visitor pattern. <br> Since the project is actively being used for the CS246e course, I can't post the source. However, I'll try to set up a terminal emulator and run it here once I get some free time!",
-    "image": "../path/to/image.png"
+    "image": "../panels/projects/images/vm.png"
 }

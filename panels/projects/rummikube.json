@@ -3,5 +3,5 @@
     "noun": "Card Game",
     "languages": "java",
     "description": "Java implementation of the rummikube card game, in a group of 2. This was my first time working with Swing and GUI in general - it was a lot of fun.",
-    "image": "../path/to/image.png"
+    "image": "../panels/projects/images/rummikube.png"
 }

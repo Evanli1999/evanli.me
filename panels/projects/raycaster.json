@@ -3,5 +3,5 @@
     "noun": "Raycaster Engine",
     "languages": "java", 
     "description": "Primitive ray tracing engine programmed in Java. Implements basic 64-bit texture rendering as well as a variable FOV.",
-    "image": "../path/to/image.png"
+    "image": "../panels/projects/images/raycaster.png"
 }
