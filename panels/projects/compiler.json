@@ -1,0 +1,7 @@
+{
+    "title": "Scala!?",
+    "noun": "Scala Subset Compiler",
+    "languages": "scala",
+    "description": "A compiler written in scala to parse a subset of scala, which forms a functional language as part of coursework for CS241e. Front end uses CYK parsing, and type-safety is implemented. Novel things like tail-recursive optimizations, closures and cheney garbage collection were difficult, but ultimately fun, to implement.>",
+    "image": "../path/to/image.png"
+}

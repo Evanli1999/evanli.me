@@ -1,5 +1,7 @@
 {
     "title": "Title",
+    "noun": "Noun",
+    "languages": "",
     "description": "Description",
     "image": "../path/to/image.png"
 }

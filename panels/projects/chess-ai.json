@@ -1,0 +1,7 @@
+{
+    "title": "Barely-Indigo",
+    "noun": "Chess Engine + AI",
+    "languages": "c++, java, python",
+    "description": "Chess Engine and AI prototyped in Java and Python, final implementation done in C++ with models trained using Tensorflow. A similar approach to alpha-zero's self learning stragety is implemented here: first, train a convolutional neural network to process a board position as outputted by our engine, and give a score to this position indicating how advantageous it is. This neural network also gives a small preference to unexplored board positions. At any particular game state, all possible neighboring game states are enumerated by the game engine and then processed by the above neural network, with the top N% finally evaluated again by a monte-carlo process. Due to the large efficiency of our implemented chess engine, upwards of 4000 games can be played for each position with a reasonable waiting time (~2 seconds). This is a non-trivial improvement over some alternatives we considered, such as the PyChess library (too slow to even consider monte-carlo) or our initial Java implementation (~1500 games). Finally, the best evaluated monte-carlo game is picked as the next move.",
+    "image": "../path/to/image.png"
+}

@@ -1,0 +1,7 @@
+{
+    "title": "React-Go",
+    "noun": "Browser Go Game",
+    "languages": "javascript react",
+    "description": "Go, implemented in JavaScript. This was a good introduction to using React.",
+    "image": "../path/to/image.png"
+}

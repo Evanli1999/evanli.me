@@ -1,0 +1,7 @@
+{
+    "title": "XiaoPix",
+    "noun": "Photoresistor Scanning Camera",
+    "languages": "arduino",
+    "description": "Camera using a single photoresistor as the light sensor. Works by mounting the photoresistor on a pinhole + lense system, then swivelling the entire contraption on two stepper motors. Takes a 300x300 px black and white image in 5 minutes.",
+    "image": "../path/to/image.png"
+}
