@@ -21,7 +21,7 @@ var languages = [
 
 function overlayProject(file = "default") {
     //console.log("trying to get " + file + ".json");
-    $.getJSON("https://evanli1999.github.io/evanli.me/panels/projects/" + "default" + ".json", function(json) {
+    $.getJSON("https://evanli1999.github.io/evanli.me/panels/projects/" + file + ".json", function(json) {
         var ls = "";
         languages.forEach((x) => {
             if(json.languages.includes(x.l)) {
