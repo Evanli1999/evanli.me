@@ -1,4 +1,6 @@
 var active = "about";
+var prod = "http://evanli.me/panels/";
+var test = "https://evanli1999.github.io/evanli.me/panels/"
 
 function onNavbarClick(option) {
     switch (option) {
@@ -11,9 +13,9 @@ function onNavbarClick(option) {
         default:
             active = "about"
     }
-    $("#mainContentPanel").load("https://evanli1999.github.io/evanli.me/panels/" + active + ".html");
+    $("#mainContentPanel").load(test + active + ".html");
 }
 
 $(function() {
-    $("#mainContentPanel").load("https://evanli1999.github.io/evanli.me/panels/" + active + ".html");
+    $("#mainContentPanel").load(test + active + ".html");
 })
