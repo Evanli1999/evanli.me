@@ -2,6 +2,6 @@
     "title": "Barely-Indigo",
     "noun": "Chess Engine + AI",
     "languages": "c++, java, python",
-    "description": "Chess engine and AI implemented in C++ - the approach similar to that of alpha-zero's self learning strategy. A convolutional neural network is first trained via reinforcement learning by playing against itself. This network, with a small preference for unexplored board positions, then gives suggestions to prune neighboring board states to be used for MCTS.",
+    "description": "Chess engine and AI implemented in C++ - the approach similar to that of alpha-zero's self learning strategy. A convolutional neural network is first trained via reinforcement learning. This network, with a small preference for unexplored board positions, then gives suggestions to prune neighboring board states to be used for MCTS.",
     "image": "panels/projects/images/chess-ai.png"
 }
