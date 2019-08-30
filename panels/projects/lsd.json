@@ -2,6 +2,6 @@
     "title": "Last Stand Defense",
     "noun": "Tower Defense Game",
     "languages": "java",
-    "description": "Tower defense game coded in Java, working in a group of 3. Final project for grade 11 ICS course. This game was my introduction to working with version control, as well as my first crack at a multi-threaded application. In hindsight, a lot of \"cute\" mistakes were made,but I'm actually quite proud of the fact that my group emerged with a fairly polished application that didn't leak memory :)",
+    "description": "Tower defense game coded in Java, working in a group of 3. Final project for grade 11 ICS course. This game was my introduction to working with version control, as well as my first crack at a multi-threaded application. In hindsight, a lot of \"cute\" mistakes were made, but I'm actually quite proud of the fact that my group emerged with a fairly polished application that didn't leak memory :)",
     "image": "panels/projects/images/lsd.png"
 }
