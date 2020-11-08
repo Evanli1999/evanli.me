@@ -2,6 +2,6 @@
     "title": "Lightish Indigo",
     "noun": "Chess Engine + AI",
     "languages": "c++,  python",
-    "description": "Chess engine and AI implemented in C++ - the approach similar to that of alpha-zero's self learning strategy. A convolutional neural network is first trained via reinforcement learning. This network is then used to set initial probabilities in a Monte-Carlo tree search, which is the ultimate deciding factor in the move the engine makes.",
+    "description": "Chess engine and AI implemented in C++ - the approach similar to that of alpha-zero's self learning strategy: A CNN is trained to set initial weights for a Monte Carlo Tree Search.",
     "image": "panels/projects/images/chess-ai.png"
 }

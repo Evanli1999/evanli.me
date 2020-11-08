@@ -1,3 +1,4 @@
 full.html
 *.sublime-project
 *.sublime-workplace
+*.DS_Store
