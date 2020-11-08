@@ -2,6 +2,6 @@
     "title": "VM",
     "noun": "Terminal Text Editor",
     "languages": "c++",
-    "description": "A vim clone written in C++ which supports most of vim's core functionality: movement, multiple registers, visual model, search, repeat commands, macros, undos ... etc, as well as a copy of the classic vim interface done in nCurses. \n\n As high level implementation overview: a MVC pattern is implemented. The model itself is a state machine, with different states corresponding to that in vim (e.g. insert, visual, macro recording, command, normal ... etc, with valid commands and state transitions defined for each. The file text is represented as a linked list where each node represents a line. Undo is implemented using a stack of enums made to represent every possible action in VM as well as its reverse. \n\n As this problem is currently being used as the final project in CS246e,the source may not be posted, but can be made available upon request.",
+    "description": "A vim clone written in C++ which supports most of vim's core functionality: movement, multiple registers, visual model, search, repeat commands, macros, undos ... etc, as well as a copy of the classic vim interface done in nCurses.",
     "image": "panels/projects/images/vm.png"
 }
